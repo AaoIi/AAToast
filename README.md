@@ -11,14 +11,14 @@ AAToast is a view containing a quick little message which could be short or long
 #####2) Create object from AAToast: ```var toast : AAToast!``` <br/>
 #####3) Show AAToast:<br/><br/>     3.1) Short Message:<br/>
 
-// send the current view frame and set the text with duration, and toast type is short.
-``toast = AAToast(frame: self.view.frame, title: "No Internet Connection !!", duration: 3,type: .short)``
+``// send the current view frame and set the text with duration, and toast type is short.``</br>
+``toast = AAToast(frame: self.view.frame, title: "No Internet Connection !!", duration: 3,type: .short)``</br>
 ``self.view.addSubview(toast)``
 
 ##### 3.2) Long Message:<br/> 
 
-// send the current view frame and set the text with duration, and toast type is long.
-``toast = AAToast(frame: self.view.frame, title: "No Internet Connection !! Please try again later", duration: 3,type: .long)``
+``// send the current view frame and set the text with duration, and toast type is long.``</br>
+``toast = AAToast(frame: self.view.frame, title: "No Internet Connection !! Please try again later", duration: 3,type: .long)``</br>
 ``self.view.addSubview(toast)``
 
 
