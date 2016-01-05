@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AAToast" customModule="AAToast" customModuleProvider="target">
+            <connections>
+                <outlet property="toastLabelLong" destination="t04-4G-u9a" id="O1U-Dd-fr0"/>
+                <outlet property="toastLabelShort" destination="iVP-0v-vjc" id="1HQ-Up-SGB"/>
+                <outlet property="toastViewLong" destination="QfV-JC-6Il" id="NDc-3p-5pt"/>
+                <outlet property="toastViewShort" destination="Zig-8n-DWp" id="pry-IF-fSx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="135"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zig-8n-DWp">
+                    <rect key="frame" x="46" y="53" width="507" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVP-0v-vjc">
+                            <rect key="frame" x="234" y="16" width="38" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="iVP-0v-vjc" firstAttribute="centerY" secondItem="Zig-8n-DWp" secondAttribute="centerY" id="NV9-uv-gq3"/>
+                        <constraint firstAttribute="height" constant="50" id="e95-yX-tK1"/>
+                        <constraint firstItem="iVP-0v-vjc" firstAttribute="centerX" secondItem="Zig-8n-DWp" secondAttribute="centerX" id="jPJ-ga-pMW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfV-JC-6Il">
+                    <rect key="frame" x="47" y="33" width="507" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t04-4G-u9a">
+                            <rect key="frame" x="12" y="8" width="483" height="54"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="t04-4G-u9a" firstAttribute="top" secondItem="QfV-JC-6Il" secondAttribute="topMargin" id="IqS-qs-5xM"/>
+                        <constraint firstItem="t04-4G-u9a" firstAttribute="bottom" secondItem="QfV-JC-6Il" secondAttribute="bottomMargin" id="M7F-Xm-xtb"/>
+                        <constraint firstAttribute="trailing" secondItem="t04-4G-u9a" secondAttribute="trailing" constant="12" id="eZ7-2N-YXQ"/>
+                        <constraint firstAttribute="height" constant="70" id="fw5-jG-S5E"/>
+                        <constraint firstItem="t04-4G-u9a" firstAttribute="leading" secondItem="QfV-JC-6Il" secondAttribute="leadingMargin" constant="4" id="osN-fw-rrC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zig-8n-DWp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="46" id="2ek-Cq-FHS"/>
+                <constraint firstItem="QfV-JC-6Il" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="47" id="7I2-Tk-oVg"/>
+                <constraint firstItem="QfV-JC-6Il" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UkW-mY-uvd"/>
+                <constraint firstAttribute="bottom" secondItem="QfV-JC-6Il" secondAttribute="bottom" constant="32" id="b8W-zs-Rps"/>
+                <constraint firstAttribute="bottom" secondItem="Zig-8n-DWp" secondAttribute="bottom" constant="32" id="jSo-s6-TOC"/>
+                <constraint firstItem="Zig-8n-DWp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qFn-gX-Wuh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="221" y="50.5"/>
+        </view>
+    </objects>
+</document>

@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6117F61C3AA0890071EA03 /* AAToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6117F51C3AA0890071EA03 /* AAToastView.xib */; };
 		CEFEF3461C3A695C00851BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF3451C3A695C00851BD2 /* AppDelegate.swift */; };
 		CEFEF3481C3A695C00851BD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF3471C3A695C00851BD2 /* ViewController.swift */; };
 		CEFEF34B1C3A695C00851BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF3491C3A695C00851BD2 /* Main.storyboard */; };
 		CEFEF34D1C3A695C00851BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF34C1C3A695C00851BD2 /* Assets.xcassets */; };
 		CEFEF3501C3A695C00851BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFEF34E1C3A695C00851BD2 /* LaunchScreen.storyboard */; };
 		CEFEF35B1C3A695C00851BD2 /* AAToastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF35A1C3A695C00851BD2 /* AAToastTests.swift */; };
+		CEFEF3661C3A699600851BD2 /* AAToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFEF3651C3A699600851BD2 /* AAToast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE6117F51C3AA0890071EA03 /* AAToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AAToastView.xib; path = Classes/AAToastView.xib; sourceTree = "<group>"; };
 		CEFEF3421C3A695C00851BD2 /* AAToast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AAToast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFEF3451C3A695C00851BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEFEF3471C3A695C00851BD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		CEFEF3561C3A695C00851BD2 /* AAToastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AAToastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFEF35A1C3A695C00851BD2 /* AAToastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAToastTests.swift; sourceTree = "<group>"; };
 		CEFEF35C1C3A695C00851BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEFEF3651C3A699600851BD2 /* AAToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAToast.swift; path = Classes/AAToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		CEFEF3441C3A695C00851BD2 /* AAToast */ = {
 			isa = PBXGroup;
 			children = (
+				CEFEF3671C3A699A00851BD2 /* Classes */,
 				CEFEF3451C3A695C00851BD2 /* AppDelegate.swift */,
 				CEFEF3471C3A695C00851BD2 /* ViewController.swift */,
 				CEFEF3491C3A695C00851BD2 /* Main.storyboard */,
@@ -94,6 +99,15 @@
 				CEFEF35C1C3A695C00851BD2 /* Info.plist */,
 			);
 			path = AAToastTests;
+			sourceTree = "<group>";
+		};
+		CEFEF3671C3A699A00851BD2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEF3651C3A699600851BD2 /* AAToast.swift */,
+				CE6117F51C3AA0890071EA03 /* AAToastView.xib */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6117F61C3AA0890071EA03 /* AAToastView.xib in Resources */,
 				CEFEF3501C3A695C00851BD2 /* LaunchScreen.storyboard in Resources */,
 				CEFEF34D1C3A695C00851BD2 /* Assets.xcassets in Resources */,
 				CEFEF34B1C3A695C00851BD2 /* Main.storyboard in Resources */,
@@ -199,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFEF3661C3A699600851BD2 /* AAToast.swift in Sources */,
 				CEFEF3481C3A695C00851BD2 /* ViewController.swift in Sources */,
 				CEFEF3461C3A695C00851BD2 /* AppDelegate.swift in Sources */,
 			);
@@ -388,6 +404,7 @@
 				CEFEF3611C3A695C00851BD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFEF3621C3A695C00851BD2 /* Build configuration list for PBXNativeTarget "AAToastTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +413,7 @@
 				CEFEF3641C3A695C00851BD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
