@@ -90,7 +90,7 @@ class AAToast: UIView {
                 
                 }) { (finished) -> Void in
                     
-                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: "invalidateTimer:", userInfo: nil, repeats: false)
+                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(self.invalidateTimer(_:)), userInfo: nil, repeats: false)
             }
             
         }else {
@@ -115,7 +115,7 @@ class AAToast: UIView {
                 
                 }) { (finished) -> Void in
                     
-                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: "invalidateTimer:", userInfo: nil, repeats: false)
+                    self.timer =  NSTimer.scheduledTimerWithTimeInterval(duration, target: self, selector: #selector(self.invalidateTimer(_:)), userInfo: nil, repeats: false)
             }
         }
         
