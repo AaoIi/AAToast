@@ -34,7 +34,7 @@ This is all the properties in AAToast the you will be able to customize from you
 ``setToastColor(UIColor)``
 
 ## Requierments ##
-* Swift 2.0+
+* Swift 2.2
 * IOS 7.0+
 
 ## License ##
