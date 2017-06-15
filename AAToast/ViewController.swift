@@ -19,12 +19,12 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func shortToast(sender: AnyObject) {
+    @IBAction func shortToast(_ sender: AnyObject) {
         toast = AAToast(frame: self.view.frame, title: "No Internet Connection !!", duration: 3,type: .short)
         self.view.addSubview(toast)
     }
     
-    @IBAction func longToast(sender: AnyObject) {
+    @IBAction func longToast(_ sender: AnyObject) {
         
         toast = AAToast(frame: self.view.frame, title: "No Internet Connection !! Please try again later", duration: 3,type: .long)
         self.view.addSubview(toast)
