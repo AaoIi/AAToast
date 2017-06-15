@@ -51,8 +51,12 @@ setToastColor(UIColor)
 ```
 
 ## Requierments ##
+<<<<<<< HEAD
 
 * Swift 2.0+
+=======
+* Swift 2.2
+>>>>>>> origin/master
 * IOS 7.0+
 
 ## License ##
