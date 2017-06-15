@@ -31,7 +31,7 @@ self.view.addSubview(toast)
 
 ```
 
-##Customization ##
+## Customization ##
 This is all the properties in AAToast the you will be able to customize from your base view controller.
 
 #### 1) Text Color<br/>
@@ -51,12 +51,8 @@ setToastColor(UIColor)
 ```
 
 ## Requierments ##
-<<<<<<< HEAD
 
-* Swift 2.0+
-=======
 * Swift 2.2
->>>>>>> origin/master
 * IOS 7.0+
 
 ## License ##
