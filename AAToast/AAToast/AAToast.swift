@@ -60,8 +60,8 @@ public class AAToast: UIView {
     /// Make code availble for nib
     private func commonInit(){
         
-        let bundle = Bundle.main
-        bundle.loadNibNamed("AAToastView", owner: self, options: nil)
+        let bundle = Bundle(path: Bundle(for: self.classForCoder).path(forResource: "AAToast", ofType: "bundle")!)
+        bundle?.loadNibNamed("AAToastView", owner: self, options: nil)
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(contentView)
         self.backgroundColor = .clear

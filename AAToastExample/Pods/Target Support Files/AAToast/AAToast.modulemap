@@ -1,0 +1,6 @@
+framework module AAToast {
+  umbrella header "AAToast-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - AAToast (1.0.0)
+
+DEPENDENCIES:
+  - AAToast (from `../AAToast/`)
+
+EXTERNAL SOURCES:
+  AAToast:
+    :path: "../AAToast/"
+
+SPEC CHECKSUMS:
+  AAToast: 6c19f82b1979db2848705e2a6020f68a36f7c00a
+
+PODFILE CHECKSUM: 35cbdf5bc1d930ba9ae727f64c7d62e8c48b7edc
+
+COCOAPODS: 1.7.2

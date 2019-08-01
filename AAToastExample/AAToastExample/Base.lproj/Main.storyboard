@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fyu-6h-1XO">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AAToast-->
+        <scene sceneID="Yg8-yd-1kV">
+            <objects>
+                <viewController id="pdg-cf-bIM" customClass="ViewController" customModule="AAToastExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JLo-ni-08G"/>
+                        <viewControllerLayoutGuide type="bottom" id="5wh-0a-AFu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5gA-0X-vIY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffX-EO-o3E">
+                                <rect key="frame" x="122.5" y="290" width="169" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.57647058819999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="gyV-L4-CbQ"/>
+                                </constraints>
+                                <state key="normal" title="Show Short AAToast">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shortToast:" destination="pdg-cf-bIM" eventType="touchUpInside" id="Lme-2U-NJB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqV-F6-ZCt">
+                                <rect key="frame" x="91" y="328" width="232" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.57647058819999997" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="oU5-rc-N9w"/>
+                                </constraints>
+                                <state key="normal" title="Show Long AAToast">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="longToast:" destination="pdg-cf-bIM" eventType="touchUpInside" id="wfV-mS-Ucb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ffX-EO-o3E" firstAttribute="centerX" secondItem="5gA-0X-vIY" secondAttribute="centerX" id="3PH-zT-KUM"/>
+                            <constraint firstItem="RqV-F6-ZCt" firstAttribute="top" secondItem="ffX-EO-o3E" secondAttribute="bottom" constant="8" symbolic="YES" id="MOq-91-2Av"/>
+                            <constraint firstItem="ffX-EO-o3E" firstAttribute="top" secondItem="98e-kc-Hxy" secondAttribute="top" constant="202" id="UM4-7b-FtN"/>
+                            <constraint firstItem="RqV-F6-ZCt" firstAttribute="centerX" secondItem="ffX-EO-o3E" secondAttribute="centerX" id="w9u-iy-uxO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="98e-kc-Hxy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="AAToast" id="xw4-yo-Mu5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dI-Mz-Ke7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GsR-7q-gRN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fyu-6h-1XO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="zz9-GD-gyH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pdg-cf-bIM" kind="relationship" relationship="rootViewController" id="OxG-sY-xNM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iuv-8A-vka" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="278"/>
+        </scene>
+    </scenes>
+</document>
