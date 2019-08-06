@@ -8,7 +8,6 @@
 
 import UIKit
 
-@available (iOS 9,*)
 public class AAToast: UIView {
     
     // views

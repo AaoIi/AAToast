@@ -27,10 +27,9 @@ pod 'AAToast'
 `import AAToast`
 
 ## How to use AAToast ##
-##### 1) import AAToast<br/>
-##### 2) Show AAToast:<br/><br/>     
+##### 1) Import AAToast<br/>
 
-##### 2.1) Default Toast:<br/>
+##### 2.1) Show Default Toast:<br/>
 
 ```swift
 
@@ -38,7 +37,7 @@ AAToast(toView: self.view, title: "No Internet Connection !!", duration: 2).show
 
 ```
 
-##### 2.2) Customizable Toast:<br/> 
+##### 2.2) Show Customizable Toast:<br/> 
 
 ```swift
 
