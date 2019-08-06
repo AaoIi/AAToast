@@ -6,28 +6,44 @@ AAToast is a view containing a quick little message which could be short or long
 ## Preview Demo
 <img src="https://lh5.googleusercontent.com/QQETZV-IhhqDfIKf4zD-WcXv4IlzGvlhrtE7Eh9wJMSpQoB92I1RtA=w373-h642-p-b1-c0x00999999">
 
-## How to use AAToast ##
-##### 1) import ```AAToast.swift``` and ```AAToastView``` into your project <br/>
-##### 2) Create object from AAToast: ```var toast : AAToast!``` <br/>
-##### 3) Show AAToast:<br/><br/>     
+### CocoaPods
+[CocoaPods][] is a dependency manager for Cocoa projects. To install AAToast with CocoaPods:
 
-##### 3.1) Short Message:<br/>
+1. Make sure CocoaPods is [installed][CocoaPods Installation].
+
+2. Update your Podfile to include the following:
+
+``` ruby
+use_frameworks!
+pod 'AAToast'
+```
+
+3. Run `pod install`.
+
+[CocoaPods]: https://cocoapods.org
+[CocoaPods Installation]: https://guides.cocoapods.org/using/getting-started.html#getting-started
+
+4. In your code import AASnackbar like so:
+`import AAToast`
+
+## How to use AAToast ##
+##### 1) import AAToast<br/>
+##### 2) Show AAToast:<br/><br/>     
+
+##### 2.1) Default Toast:<br/>
 
 ```swift
 
-// send the current view frame and set the text with duration, and toast type is short.
-toast = AAToast(frame: self.view.frame, title: "No Internet Connection !!", duration: 3,type: .short)
-self.view.addSubview(toast)
+AAToast(toView: self.view, title: "No Internet Connection !!", duration: 2).show()
 
 ```
 
-##### 3.2) Long Message:<br/> 
+##### 2.2) Customizable Toast:<br/> 
 
 ```swift
 
-// send the current view frame and set the text with duration, and toast type is long.
-toast = AAToast(frame: self.view.frame, title: "No Internet Connection !! Please try again later", duration: 3,type: .long)
-self.view.addSubview(toast)
+AAToast(toView: self.view, title: "No Internet Connection !! Please try again later No Internet Connection", duration: 2,textColor: .white,backgroundColor: .black,font: UIFont.systemFont(ofSize: 18)).show()
+
 
 ```
 
@@ -38,22 +54,38 @@ This is all the properties in AAToast the you will be able to customize from you
 
 ```swift
 
-setTextColor(UIColor)
+public func setTextColor(_ color:UIColor?)
 
 ```
 
-#### 2) Toast Color<br/>
+#### 2) Toast Background Color<br/>
 
 ```swift
 
-setToastColor(UIColor)
+public func setBackgroundColor(_ color:UIColor?)
+
+```
+
+#### 3) Toast Font<br/>
+
+```swift
+
+public func setFont(_ font:UIFont?)
+
+```
+
+#### 4) Toast Bottom Padding<br/>
+
+```swift
+
+public func setBottomPadding(_ value:CGFloat?)
 
 ```
 
 ## Requierments ##
 
-* Swift 2.2+
-* IOS 7.0+
+* Swift 5+
+* IOS 8+
 
 ## License ##
 

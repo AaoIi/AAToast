@@ -25,7 +25,7 @@ public class AAToast: UIView {
     //constants
     private let toastLabelLeftRightPadding : CGFloat = 20
     private let toastLabelTopBottomPadding : CGFloat = 16
-    private let bottomPadding : CGFloat = 16
+    private var bottomPadding : CGFloat = 16
     
     //MARK:- Core
     
@@ -164,9 +164,20 @@ public class AAToast: UIView {
         self.toastBackgroundColor = color
     }
     
+    /// Modify toast font size and style
+    ///
+    /// - Parameter font: custom font, defaults to system(17)
     public func setFont(_ font:UIFont?){
         guard let font = font else {return}
         self.toastFont = font
+    }
+    
+    /// To adjust bottom padding for custom view controllers
+    ///
+    /// - Parameter value: padding value from bottom, defaults to 16
+    public func setBottomPadding(_ value:CGFloat?){
+        guard let value = value else {return}
+        self.bottomPadding = value
     }
     
     //MARK:- Helpers
