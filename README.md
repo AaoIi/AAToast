@@ -41,7 +41,7 @@ AAToast(toView: self.view, title: "No Internet Connection !!", duration: 2).show
 
 ```swift
 
-AAToast(toView: self.view, title: "No Internet Connection !! Please try again later No Internet Connection", duration: 2,textColor: .white,backgroundColor: .black,font: UIFont.systemFont(ofSize: 18)).show()
+AAToast(toView: self.view, title: "No Internet Connection !! Please try again later", duration: 2,textColor: .white,backgroundColor: .black,font: UIFont.systemFont(ofSize: 18)).show()
 
 
 ```
