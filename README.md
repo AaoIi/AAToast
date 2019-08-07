@@ -23,7 +23,7 @@ pod 'AAToast'
 [CocoaPods]: https://cocoapods.org
 [CocoaPods Installation]: https://guides.cocoapods.org/using/getting-started.html#getting-started
 
-4. In your code import AASnackbar like so:
+4. In your code import AAToast like so:
 `import AAToast`
 
 ## How to use AAToast ##
